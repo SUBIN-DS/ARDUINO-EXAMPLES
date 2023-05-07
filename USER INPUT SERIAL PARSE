@@ -1,0 +1,32 @@
+int red=7;
+int blue=10;
+int var;
+int x;
+int y;
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(red, OUTPUT);
+  pinMode(blue, OUTPUT);
+}
+
+void loop(){
+{
+  for(var=Serial.parseInt(); var==0; var=Serial.parseInt());
+  Serial.println(var);
+  x=var;
+  for(y=1; y<=x; y++)
+  {
+      digitalWrite(red, HIGH);
+  	  delay(500);
+      digitalWrite(red, LOW);
+      delay(500);
+  }
+}
+  Serial.println("LOOP OUT");
+  digitalWrite(blue, HIGH);
+  delay(500);
+  digitalWrite(blue, LOW);
+  delay(500);
+}
