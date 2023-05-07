@@ -1,0 +1,25 @@
+int red=7;
+int blue=10;
+int x;
+
+void setup(){
+  Serial.begin(9600);
+  pinMode(red, OUTPUT);
+  pinMode(blue, OUTPUT);
+}
+
+void loop(){
+for(x=1; x<=5; x++){
+  Serial.print("RED ON #");
+  Serial.println(x);
+  digitalWrite(red, HIGH);
+  delay(500);
+  digitalWrite(red, LOW);
+  delay(500);
+  	}
+  Serial.println("BLUE ON");
+  digitalWrite(blue, HIGH);
+  delay(500);
+  digitalWrite(blue, LOW);
+  delay(500);
+}
