@@ -1,0 +1,23 @@
+/*** a PULL DOWN resistor added for avoid short circuit 
+condition and prevent floating pins; This resistor 
+"pull down" the input pin to ground when the switch is open.***/
+
+
+int blue=10;
+int key=2;
+
+void setup()
+{
+  pinMode(blue, OUTPUT);
+  pinMode(key, INPUT);
+}
+
+void loop()
+{
+  int keyVal=digitalRead(key);
+
+  digitalWrite(blue, keyVal);
+  delay(500);
+  digitalWrite(blue, LOW);
+  delay(500);
+}
