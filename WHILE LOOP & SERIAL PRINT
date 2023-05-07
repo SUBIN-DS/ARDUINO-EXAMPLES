@@ -11,8 +11,8 @@ void setup()
 
 void loop()
 {
-  var=1;
-  while(var<=5)
+  var=1; //initialization
+  while(var<=5) //condition
   {
     Serial.print("CHECKING RED LED # ");
     Serial.println(var);
@@ -20,7 +20,7 @@ void loop()
     delay(500);
     digitalWrite(red, LOW);
     delay(500);
-    var++;
+    var++; //updation
   }
 
    Serial.println("BLUE LOOP");
