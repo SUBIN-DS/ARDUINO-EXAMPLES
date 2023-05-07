@@ -9,7 +9,9 @@ void setup(){
 }
 
 void loop(){
-for(x=1; x<=5; x++){
+for(x=1; x<=5; x++) //initialization, conditions, updation
+
+{
   Serial.print("RED ON #");
   Serial.println(x);
   digitalWrite(red, HIGH);
