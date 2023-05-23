@@ -1,0 +1,14 @@
+
+void setup()
+{
+  Serial.begin(9600);
+  Serial.println("Enter an integer");
+  int number=Serial.parseInt();
+  delay(1000);
+  Serial.print("you entered= ");
+  Serial.println(number);
+}
+
+void loop()
+{}
+  
