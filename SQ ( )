@@ -1,0 +1,12 @@
+//Calculates the square of a number: 
+// the number multiplied by itself.
+
+
+void setup()
+{
+  Serial.begin(9600);
+  int z = sq(8);
+  Serial.println(z);
+}
+
+void loop(){}
