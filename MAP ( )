@@ -1,0 +1,19 @@
+/*Re-maps a number from one range to another. 
+That is, a value of fromLow (0) would get mapped to toLow (0), 
+a value of fromHigh(1023) to toHigh(255), 
+values in-between to values in-between, etc.
+use analog value to digital value*/
+
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(A0, INPUT);
+}
+
+void loop() 
+{
+  int val = analogRead(A0);
+  val = map(val, 0, 1023, 0, 255);
+  Serial.println(val);
+}
