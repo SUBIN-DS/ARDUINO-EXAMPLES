@@ -1,0 +1,14 @@
+int x = 13;
+int y = -15;
+
+void setup() 
+
+{
+  Serial.begin(9600);
+  
+  Serial.println(abs(x)); //prints 13 unit from zero
+  Serial.println(abs(y)); //prints 15 unit from zero
+}
+
+void loop() 
+{}
