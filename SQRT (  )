@@ -1,0 +1,10 @@
+//Calculates the square root of a number: 
+
+void setup()
+{
+  Serial.begin(9600);
+  int z = sqrt(64);
+  Serial.println(z);
+}
+
+void loop(){}
