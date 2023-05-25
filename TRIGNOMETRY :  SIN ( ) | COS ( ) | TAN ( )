@@ -1,0 +1,14 @@
+//Calculates the sine/cosine/tan of an angle (in radians).
+
+
+int x = 0;
+
+void setup()
+{
+  Serial.begin(9600);
+  Serial.println(sin(x));
+  Serial.println(cos(x));
+  Serial.println(tan(x));
+}
+
+void loop() {}
