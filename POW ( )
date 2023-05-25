@@ -1,0 +1,9 @@
+
+void setup()
+{
+  Serial.begin(9600);
+  int z = pow(5, 2); //pow(base, exponent)
+  Serial.println(z);
+}
+
+void loop(){}
