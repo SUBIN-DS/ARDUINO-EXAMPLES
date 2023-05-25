@@ -1,0 +1,18 @@
+int sensVal;
+
+void setup() 
+{
+  Serial.begin(9600);
+  pinMode(A0, INPUT);
+}
+
+void loop() 
+{
+  sensVal=analogRead(A0);
+  sensVal = max(sensVal, 200);
+  Serial.println(sensVal);
+}
+
+
+
+
