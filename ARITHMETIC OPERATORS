@@ -1,0 +1,23 @@
+int x = 11;
+int y = 2;
+
+float p = 12.5;
+float q = 7.36;
+
+void setup()
+{
+  Serial.begin(9600);
+  Serial.println(x%y);
+  Serial.println(x+y);
+  Serial.println(x*y);
+  Serial.println(x-y);
+  Serial.println(x/y);
+  
+  //Serial.println(p%q);
+  Serial.println(p+q);
+  Serial.println(p*q);
+  Serial.println(p-q);
+  Serial.println(p/q);
+}
+
+void loop(){}
