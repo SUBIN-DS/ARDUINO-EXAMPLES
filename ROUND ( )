@@ -1,0 +1,17 @@
+  float x=22.104;
+  float y=7.301;
+  float ans=x/y;
+  
+  void setup() 
+{
+  Serial.begin(9600);       // use the serial port to print the number
+}
+
+void loop()
+{
+
+  Serial.println(x);
+  Serial.println(ans);
+  Serial.println(round(y)); ////////////////round()
+  delay(3000);
+}
