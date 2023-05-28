@@ -1,0 +1,21 @@
+int array[10];                              //can declare an array without initializing its elements and index limit.  
+int myPins[] = {2, 4, 8, 3, 6};             //Declaring array without the index limit.
+int mySensVals[5] = {20, 40, -80, 30, 50};  //Declaring an array with index value and elements.
+char message[6] = "hello";                  //Declaring an character array. 
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  for (byte i = 0; i < 5; i = i + 1) 
+  {
+    char character=message[i];
+    Serial.println(myPins[i]);		//print int value
+    Serial.println(mySensVals[i]);	//print int value
+    Serial.println(character);		//print character
+    delay(1000);
+  }
+}
