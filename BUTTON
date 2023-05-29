@@ -1,0 +1,17 @@
+int sw=7;
+int val=0;
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(10, OUTPUT);
+  pinMode(sw,INPUT);
+}
+
+void loop()
+{
+  sw=digitalRead(7);
+  Serial.println(sw);
+  digitalWrite(10, sw);
+  delay(2000);
+}
