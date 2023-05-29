@@ -1,0 +1,13 @@
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(7,INPUT); //pushbutton
+}
+
+void loop()
+{
+  bool var;
+  var=digitalRead(7);
+  Serial.println(var);
+  delay(1000);
+}
