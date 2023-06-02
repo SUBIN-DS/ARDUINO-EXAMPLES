@@ -1,0 +1,13 @@
+//bit wise not
+
+int x =0;
+
+void setup()
+{
+  Serial.begin(9600);
+  int y=~x;
+  Serial.println(y, BIN);
+  Serial.println(y);
+}
+
+void loop(){}
