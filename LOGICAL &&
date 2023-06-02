@@ -1,0 +1,19 @@
+int x= 12;
+int y=12;
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  if ((x==12)&&(y==12))
+  {
+    Serial.println("YES, y & x is equal");
+  }
+  else
+  {
+    Serial.println("NO, y & x not equal");
+  }
+  delay(1000);
+}
