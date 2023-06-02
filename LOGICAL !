@@ -1,0 +1,19 @@
+int x= 12;
+int y=18;
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  if (!(y==x))
+  {
+    Serial.println("YES, y not x");
+  }
+  else
+  {
+    Serial.println("NO, y = x");
+  }
+  delay(1000);
+}
