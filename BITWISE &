@@ -1,0 +1,15 @@
+int a =  92;    // in binary: 0000000001011100
+int b = 101;    // in binary: 0000000001100101
+ 
+
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int c=a&b;
+  Serial.println(c, BIN); // result:    0000000001000100, or 68 in decimal.
+}
