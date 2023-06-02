@@ -1,0 +1,16 @@
+//bitwise xor
+
+int x = 11;
+int y = 17;
+
+void setup()
+{
+  Serial.begin(9600);
+  int z = x ^ y;
+  Serial.println(z);
+  Serial.println(x, BIN);
+  Serial.println(y, BIN);
+  Serial.println(z, BIN);
+}
+
+void loop(){}
