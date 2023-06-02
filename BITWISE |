@@ -1,0 +1,15 @@
+int a =  12;  
+int b = 11;
+
+
+void setup()
+{
+  Serial.begin(9600);
+  int c = a | b;
+  Serial.println(a, BIN);
+  Serial.println(b, BIN);
+  Serial.println(c, BIN);
+  Serial.println(c);
+}
+
+void loop(){}
