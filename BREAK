@@ -1,0 +1,31 @@
+int red=11;
+int blue=9;
+int pwm;
+
+void setup()
+{
+  pinMode(red, OUTPUT);
+  pinMode(blue, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  for (pwm=0; pwm<256; pwm++)
+  {  
+    Serial.println(pwm);
+    analogWrite(blue, pwm);
+    delay(100);
+    if (pwm>150)
+    {
+      break;
+    }
+  }
+
+  Serial.println("exit");    
+  analogWrite(red, pwm);
+  delay(1000);
+  analogWrite(red, 0);
+  delay(1000);
+  pwm=0;
+}
