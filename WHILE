@@ -1,0 +1,15 @@
+int var = 0;
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  while (var < 200) 
+  {
+    Serial.print("while loop running: ");// do something repetitive 200 times
+    Serial.println(var);
+    var++;
+  }
+}
