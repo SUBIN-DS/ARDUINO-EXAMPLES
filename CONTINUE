@@ -1,0 +1,31 @@
+int red = 9;
+int blue =11;
+int pwm;
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  for(pwm=0; pwm<256; pwm++)
+  {
+    Serial.println(pwm);
+    if (pwm>100 && pwm<200)
+    {
+      Serial.println("RED");
+      digitalWrite(red, 1);
+      delay(50);
+      digitalWrite(red, 0);
+      delay(50);
+      continue;
+    }
+
+      Serial.println("BLUE");
+      analogWrite(blue, 1);
+      delay(50);
+      digitalWrite(blue, 0);
+      delay(50);
+  }
+}
