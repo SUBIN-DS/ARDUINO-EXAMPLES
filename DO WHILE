@@ -1,0 +1,23 @@
+
+int pwm;
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  do
+  {
+    pwm++;
+    Serial.print("do running: ");
+    Serial.println(pwm);
+    delay(10); 
+  }
+  while(pwm<150);
+  {
+    Serial.println("while running");
+    delay(10);
+  }
+}
