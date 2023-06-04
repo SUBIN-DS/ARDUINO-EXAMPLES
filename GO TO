@@ -1,0 +1,25 @@
+int x;
+int y;
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  for(x=0; x<100; x++)
+  {
+    if(x>=100)
+    {
+      goto y;
+    } 
+    Serial.print("inside for loop: ");
+    Serial.println(x);
+  }
+  
+  y:
+  {
+    Serial.println("running y");
+  }
+}
